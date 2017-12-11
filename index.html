@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="">
+	<style>
+		.ml-15{
+			margin-left:15px !important;
+		}
+		.mt-20{
+		margin-top:20px !important;
+		}
+		.bt-none{
+		border-top:none !important;
+		}
+	</style>
+    <title>Dashboard Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="dashboard.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #05379D;">
+        <a class="navbar-brand" href="#">Report Viewer</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+         <!-- <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Help</a>
+            </li>
+          </ul>
+          <form class="form-inline mt-2 mt-md-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+		  -->
+        </div>
+      </nav>
+    </header>
+
+    <div class="container-fluid">
+	
+      <div class="row">
+
+        <main role="" class="col-sm-12 col-md-12 mt-20">
+         
+          <!--<section class="row text-center placeholders">
+            <div class="col-6 col-sm-3 placeholder">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIABAAJ12AAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+              <h4>Label</h4>
+              <div class="text-muted">Something else</div>
+            </div>
+            <div class="col-6 col-sm-3 placeholder">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIABAADcgwAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+              <h4>Label</h4>
+              <span class="text-muted">Something else</span>
+            </div>
+            <div class="col-6 col-sm-3 placeholder">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIABAAJ12AAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+              <h4>Label</h4>
+              <span class="text-muted">Something else</span>
+            </div>
+            <div class="col-6 col-sm-3 placeholder">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIABAADcgwAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+              <h4>Label</h4>
+              <span class="text-muted">Something else</span>
+            </div>
+          </section>-->
+		
+		<div id="exampleAccordion" data-children=".item">
+		  <div class="item">
+			<a data-toggle="collapse" data-parent="#exampleAccordion" href="#exampleAccordion1" aria-expanded="true" aria-controls="exampleAccordion1" >
+			  <h4 style="background-color : #DCDEE3 !important;padding-bottom:5px;padding-left:5px;border-radius:2px;">Search Report</h4>
+			</a>
+			<div id="exampleAccordion1" class="collapse show" role="tabpanel">
+			  <p class="mb-3">
+				<ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+		  <li class="nav-item">
+			<a class="nav-link active" id="vermillion-tab" data-toggle="tab" href="#vermillion" role="tab" aria-controls="vermillion" aria-selected="true"><h6>Vermillion</h6></a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" id="obiee-tab" data-toggle="tab" href="#obiee" role="tab" aria-controls="obiee" aria-selected="false"><h6>OBIEE</h6></a>
+		  </li>
+		</ul>
+		<div class="tab-content" id="myTabContent">
+		  <div class="tab-pane fade show active" id="vermillion" role="tabpanel" aria-labelledby="vermillion-tab">
+		<div class="card bt-none">
+		  <div class="card-body">
+		  <form>
+				  <div class="form-row">
+					<div class="form-group col-md-4">
+					  <label for="inputEmail4">Account Name</label>
+					  <input type="text" class="form-control" id="inputEmail4" placeholder="Search Account">
+					</div>
+					
+				    <div class="form-group col-md-4">
+					  <label for="inputState">Report Type</label>
+					  <select id="inputState" class="form-control">
+						<option selected>Select Report Type</option>
+						<option>MIR</option>
+						<option>QIR</option>
+						<option>MAR</option>
+					  </select>
+					</div>
+					
+					<div class="form-group col-md-4">
+					  <label for="inputPassword4">Report Date</label>
+					  <input type="date" class="form-control" id="inputPassword4" placeholder="Report Date">
+					</div>
+					
+				  </div>
+				  
+				  <button type="submit" class="btn btn-primary">Search</button>
+			</form>
+		  </div>
+		</div>
+		  
+		  </div>
+		  <div class="tab-pane fade" id="obiee" role="tabpanel" aria-labelledby="obiee-tab">
+			<div class="card bt-none">
+		  <div class="card-body">
+		  <form>
+				  <div class="form-row">
+					<div class="form-group col-md-4">
+					  <label for="inputEmail4">Account Name</label>
+					  <input type="text" class="form-control" id="inputEmail4" placeholder="Search Account">
+					</div>
+					
+				    <div class="form-group col-md-4">
+					  <label for="inputState">LOB</label>
+					  <select id="inputState" class="form-control">
+						<option selected>Select LOB</option>
+						<option>Institutional</option>
+						<option>Wholesale</option>
+						<option>DC</option>
+					  </select>
+					</div>
+					
+					<div class="form-group col-md-4">
+					  <label for="inputPassword4">Region</label>
+					  <select id="inputState" class="form-control">
+						<option selected>Select Region</option>
+						<option>Asia</option>
+						<option>Japan</option>
+						<option>UK</option>
+					  </select>
+					</div>
+					
+				  </div>
+				   <div class="form-row">
+					<div class="form-group col-md-4">
+					  <label for="inputPassword4">Frequency</label>
+					  <select id="inputState" class="form-control">
+						<option selected>Select frequency</option>
+						<option>Daily</option>
+						<option>Weekly</option>
+						<option>Monthly</option>
+						<option>Quarterly</option>
+					  </select>
+					</div>
+					
+					<div class="form-group col-md-4">
+					  <label for="inputPassword4">Report Date</label>
+					  <input type="date" class="form-control" id="inputPassword4" placeholder="Report Date">
+					</div>
+				   
+				   </div>
+				  
+				  <button type="submit" class="btn btn-primary">Search</button>
+			</form>
+		  </div>
+		</div>
+		  
+		  </div>
+		</div>
+			  </p>
+			</div>
+		  </div>
+		</div>
+		
+          <h4 style="padding-left:5px;">Search Result</h4>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Account Name</th>
+                  <th>Report Name</th>
+                  <th>Report Type</th>
+                  <th>View/Download</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Massey Ferguson</td>
+                  <td>Massey Ferguson Report 1</td>
+                  <td>QIR</td>
+                  <td><a href="#"><img class="ml-15" title="view" src="svg/si-glyph-view.svg" width="25" height="25"/></a> <a href="#"><img class="ml-15" title="download" src="svg/si-glyph-file-download.svg" width="16" height="16"/></a></td>
+                </tr>
+                  <tr>
+                  <td>Massey Ferguson</td>
+                  <td>Massey Ferguson Report 2</td>
+                  <td>MIR</td>
+                  <td><a href="#"><img class="ml-15" title="view" src="svg/si-glyph-view.svg" width="25" height="25"/></a> <a href="#"><img class="ml-15" title="download" src="svg/si-glyph-file-download.svg" width="16" height="16"/></a></td>
+                </tr>
+                <tr>
+                  <td>Massey Ferguson</td>
+                  <td>Massey Ferguson Report 3</td>
+                  <td>QAR</td>
+                  <td><a href="#"><img class="ml-15" title="view" src="svg/si-glyph-view.svg" width="25" height="25"/></a> <a href="#"><img class="ml-15" title="download" src="svg/si-glyph-file-download.svg" width="16" height="16"/></a></td>
+                </tr>
+                <tr>
+                  <td>Massey Ferguson</td>
+                  <td>Massey Ferguson Report 4</td>
+                  <td>MAR</td>
+                  <td><a href="#"><img class="ml-15" title="view" src="svg/si-glyph-view.svg" width="25" height="25"/></a> <a href="#"><img class="ml-15" title="download" src="svg/si-glyph-file-download.svg" width="16" height="16"/></a></td>
+                </tr>
+				<tr>
+                  <td>Massey Ferguson</td>
+                  <td>Massey Ferguson Report 1</td>
+                  <td>QIR</td>
+                  <td><a href="#"><img class="ml-15" title="view" src="svg/si-glyph-view.svg" width="25" height="25"/></a> <a href="#"><img class="ml-15" title="download" src="svg/si-glyph-file-download.svg" width="16" height="16"/></a></td>
+                </tr>
+                  <tr>
+                  <td>Massey Ferguson</td>
+                  <td>Massey Ferguson Report 2</td>
+                  <td>MIR</td>
+                  <td><a href="#"><img class="ml-15" title="view" src="svg/si-glyph-view.svg" width="25" height="25"/></a> <a href="#"><img class="ml-15" title="download" src="svg/si-glyph-file-download.svg" width="16" height="16"/></a></td>
+                </tr>
+                <tr>
+                  <td>Massey Ferguson</td>
+                  <td>Massey Ferguson Report 3</td>
+                  <td>QAR</td>
+                  <td><a href="#"><img class="ml-15" title="view" src="svg/si-glyph-view.svg" width="25" height="25"/></a> <a href="#"><img class="ml-15" title="download" src="svg/si-glyph-file-download.svg" width="16" height="16"/></a></td>
+                </tr>
+                <tr>
+                  <td>Massey Ferguson</td>
+                  <td>Massey Ferguson Report 4</td>
+                  <td>MAR</td>
+                  <td><a href="#"><img class="ml-15" title="view" src="svg/si-glyph-view.svg" width="25" height="25"/></a> <a href="#"><img class="ml-15" title="download" src="svg/si-glyph-file-download.svg" width="16" height="16"/></a></td>
+                </tr>
+				<tr>
+                  <td>Massey Ferguson</td>
+                  <td>Massey Ferguson Report 1</td>
+                  <td>QIR</td>
+                  <td><a href="#"><img class="ml-15" title="view" src="svg/si-glyph-view.svg" width="25" height="25"/></a> <a href="#"><img class="ml-15" title="download" src="svg/si-glyph-file-download.svg" width="16" height="16"/></a></td>
+                </tr>
+                  <tr>
+                  <td>Massey Ferguson</td>
+                  <td>Massey Ferguson Report 2</td>
+                  <td>MIR</td>
+                  <td><a href="#"><img class="ml-15" title="view" src="svg/si-glyph-view.svg" width="25" height="25"/></a> <a href="#"><img class="ml-15" title="download" src="svg/si-glyph-file-download.svg" width="16" height="16"/></a></td>
+                </tr>
+                <tr>
+                  <td>Massey Ferguson</td>
+                  <td>Massey Ferguson Report 3</td>
+                  <td>QAR</td>
+                  <td><a href="#"><img class="ml-15" title="view" src="svg/si-glyph-view.svg" width="25" height="25"/></a> <a href="#"><img class="ml-15" title="download" src="svg/si-glyph-file-download.svg" width="16" height="16"/></a></td>
+                </tr>
+                <tr>
+                  <td>Massey Ferguson</td>
+                  <td>Massey Ferguson Report 4</td>
+                  <td>MAR</td>
+                  <td><a href="#"><img class="ml-15" title="view" src="svg/si-glyph-view.svg" width="25" height="25"/></a> <a href="#"><img class="ml-15" title="download" src="svg/si-glyph-file-download.svg" width="16" height="16"/></a></td>
+                </tr>
+               
+              </tbody>
+            </table>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+  </body>
+</html>
